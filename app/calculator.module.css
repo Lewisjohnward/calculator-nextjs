@@ -5,6 +5,7 @@
     background: black;
     padding: 10px;
     border-radius: 15px;
+    user-select: none;
 }
 
 .display {
@@ -16,6 +17,7 @@
     padding: 8px 5px;
     margin-bottom: 10px;
     color: white;
+    user-select: text;
 }
 
 .row {

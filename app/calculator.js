@@ -19,6 +19,7 @@ const Calculator = () => {
     useEffect(() => {
         console.log(value1)
     }, [value1])
+
     return (
         <div className={styles.container}>
 
@@ -44,14 +45,20 @@ const Calculator = () => {
             <div className={styles.row}>
                 <div 
                     className={styles.numpad}
-                    onClick={() => handleNumpad(5)}
+                    onClick={() => handleNumpad(7)}
                 >
                     7
                 </div>
-                <div className={styles.numpad}>
+                <div 
+                    className={styles.numpad}
+                    onClick={() => handleNumpad(8)}
+                >
                     8
                 </div>
-                <div className={styles.numpad}>
+                <div 
+                    className={styles.numpad}
+                    onClick={() => handleNumpad(9)}
+                >
                     9
                 </div>
                 <div className={styles.numpad, styles.rightcolumn}>
@@ -59,13 +66,22 @@ const Calculator = () => {
                 </div>
             </div>
             <div className={styles.row}>
-                <div className={styles.numpad}>
+                <div 
+                    className={styles.numpad}
+                    onClick={() => handleNumpad(4)}
+                >
                     4
                 </div>
-                <div className={styles.numpad}>
+                <div 
+                    className={styles.numpad}
+                    onClick={() => handleNumpad(5)}
+                >
                     5
                 </div>
-                <div className={styles.numpad}>
+                <div 
+                    className={styles.numpad}
+                    onClick={() => handleNumpad(6)}
+                >
                     6
                 </div>
                 <div className={styles.numpad, styles.rightcolumn}>
@@ -73,13 +89,22 @@ const Calculator = () => {
                 </div>
             </div>
                 <div className={styles.row}>
-                    <div className={styles.numpad}>
+                    <div 
+                        className={styles.numpad}
+                        onClick={() => handleNumpad(1)}
+                    >
                         1
                     </div>
-                    <div className={styles.numpad}>
+                    <div 
+                        className={styles.numpad}
+                        onClick={() => handleNumpad(2)}
+                    >
                         2
                     </div>
-                    <div className={styles.numpad}>
+                    <div 
+                        className={styles.numpad}
+                        onClick={() => handleNumpad(3)}
+                    >
                         3
                     </div>
                     <div className={styles.numpad, styles.rightcolumn}>
@@ -87,7 +112,9 @@ const Calculator = () => {
                     </div>
                 </div>
                 <div className={styles.row}>
-                    <div className={styles.numpad}>
+                    <div className={styles.numpad}
+                        onClick={() => handleNumpad(2)}
+                    >
                         0
                     </div>
                     <div className={styles.numpad}>
